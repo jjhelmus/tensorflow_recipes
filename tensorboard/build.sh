@@ -23,6 +23,7 @@ cp -R bazel-bin/tensorboard/pip_package/build_pip_package.runfiles/org_tensorflo
 
 cp tensorboard/pip_package/MANIFEST.in ${TMPDIR}
 cp README.md ${TMPDIR}
+cp tensorboard/pip_package/README.rst ${TMPDIR}
 cp tensorboard/pip_package/setup.py ${TMPDIR}
 cd tmp_pip_dir
 rm -f MANIFEST
