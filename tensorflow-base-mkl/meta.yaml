@@ -24,9 +24,10 @@ source:
     - 0003-Update-is_windows-to-allow-mingw-shells.patch
     - 0004-Escape-regex-pattern-properly-before-using-it.patch
     - set_openmp_var_defaults.patch
+    - mkl_dnn_avx.patch
 
 build:
-  number: 0
+  number: 1
   skip: True  # [not x86_64]
   skip: True  # [win and vc<14]
   string: mkl_py{{ CONDA_PY }}h{{PKG_HASH}}_{{ PKG_BUILDNUM }}
